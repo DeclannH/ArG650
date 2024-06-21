@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Selection</title>
+    {% load static %}
+    <script src="{% static 'repairs/js/dynamic_dropdowns.js' %}"></script>
+</head>
+<body>
+    <h1>Select Your Vehicle</h1>
+    <form id="vehicle-selection-form">
+        <label for="year">Year:</label>
+        <select id="year" name="year">
+            <option value="">Select Year</option>
+        </select>
+        <br><br>
+        <label for="make">Make:</label>
+        <select id="make" name="make" disabled>
+            <option value="">Select Make</option>
+        </select>
+        <br><br>
+        <label for="model">Model:</label>
+        <select id="model" name="model" disabled>
+            <option value="">Select Model</option>
+        </select>
+        <br><br>
+        <label for="trim">Trim:</label>
+        <select id="trim" name="trim" disabled>
+            <option value="">Select Trim</option>
+        </select>
+        <br><br>
+        <label for="repair_type">Type of Repair:</label>
+        <select id="repair_type" name="repair_type" disabled>
+            <option value="">Select Type of Repair</option>
+            <option value="engine">Engine</option>
+            <option value="transmission">Transmission</option>
+            <option value="brakes">Brakes</option>
+            <!-- Add more repair types as needed -->
+        </select>
+        <br><br>
+        <label for="repair">Repair:</label>
+        <select id="repair" name="repair" disabled>
+            <option value="">Select Repair</option>
+        </select>
+        <br><br>
+        <button type="submit">Begin Repair</button>
+    </form>
+</body>
+</html>
