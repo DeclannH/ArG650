@@ -127,3 +127,6 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Add your MongoDB URI here
+MONGODB_URI = 'mongodb+srv://ReadOnly:ReadOnly@declanndreams.gdmkteb.mongodb.net/?retryWrites=true&w=majority&appName=DeclannDreams'
